@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Palette 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Palette 1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    .palette-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .palette-title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .palette-subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin: 0 0 28px;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 18px;
+    }
+
+    .color-card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .swatch {
+      height: 120px;
+      width: 100%;
+    }
+
+    .color-info {
+      padding: 14px 14px 16px;
+    }
+
+    .color-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .color-hex {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
+  <div class="palette-grid">
+  <div class="color-card">
+    <div class="swatch" style="background:#800020;"></div>
+    <div class="color-info">
+      <p class="color-name">Burgundy</p>
+      <p class="color-hex">#800020</p>
+    </div>
+  </div>
 
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="038086302792814675">
-    new CoolorsPaletteWidget("038086302792814675", ["800020","cb534b"]);
-  </script>
-
+  <div class="color-card">
+    <div class="swatch" style="background:#CB534B;"></div>
+    <div class="color-info">
+      <p class="color-name">Terracotta</p>
+      <p class="color-hex">#CB534B</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
