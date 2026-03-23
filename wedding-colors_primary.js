@@ -1,0 +1,3 @@
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="045219073469850835">new CoolorsPaletteWidget("045219073469850835", ["800020","cb534b","dca1a1","dacbbf","413533"]); </script>
