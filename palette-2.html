@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Palette 2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Palette 1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    .palette-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .palette-title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .palette-subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin: 0 0 28px;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 18px;
+    }
+
+    .color-card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .swatch {
+      height: 120px;
+      width: 100%;
+    }
+
+    .color-info {
+      padding: 14px 14px 16px;
+    }
+
+    .color-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .color-hex {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
+  <div class="palette-grid">
+  <div class="color-card">
+    <div class="swatch" style="background:#DCA1A1;"></div>
+    <div class="color-info">
+      <p class="color-name">Desert Rose</p>
+      <p class="color-hex">#DCA1A1</p>
+    </div>
+  </div>
 
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="033567071213656496">
-    new CoolorsPaletteWidget("033567071213656496", ["dca1a1","dacbbf","413533"]);
-  </script>
+  <div class="color-card">
+    <div class="swatch" style="background:#DACBBF;"></div>
+    <div class="color-info">
+      <p class="color-name">Sand Dollar</p>
+      <p class="color-hex">#DACBBF</p>
+    </div>
+  </div>
 
+  <div class="color-card">
+    <div class="swatch" style="background:#413533;"></div>
+    <div class="color-info">
+      <p class="color-name">Charcoal Brown</p>
+      <p class="color-hex">#413533</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
